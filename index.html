@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>任务7</title>
+    <meta charset="UTF-8">
+    <style>
+      *{
+        padding: 0px;
+        margin: 0px;
+      }
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
+      ul,ol,li{
+        list-style: none;
+      }
+      .header{
+        position: relative;
+        padding-bottom: 0;
+        height: 100%;
+        text-align:center;
+      }
+      .header{
+        height:30px;
+        background-color:#f4f4f4;
+      }
+      .top{
+        width:1200px;
+        height:30px;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+      }
+      .to1{
+        float:right;
+        color:#333333;
+        margin-top:6px;
+      }
+      .to2{
+        float:left;
+        color:#333333;
+        margin-top:6px;
+      }
+      .to3{
+        float:left;
+        margin-top:0.5px;
+      }
+      .a1{
+      	color: black;
+      }
+      .topp{
+        height: 160px;
+        border-bottom: 3px solid #e00304;
+        margin: 0 auto;
+      }
+      .toppp{
+        margin: 0 auto;
+        margin-top:20px;
+        height: 120px;
+        width: 1200px;
+        position: relative;
+      }
+      .toppp img{
+        float: left;
+        margin-top: 10px;
+      }
+      .inp1{
+         position: absolute;
+         width: 405px;
+         height: 36px;
+         top:40px;
+         left: 380px;
+         border: 2px solid #e00304;
+         font-size: 14px;
+         color: #c1c1c1;
+      }
+      .ss{
+        position: absolute;
+        top:40px;
+        left: 789px;
+        height: 40px;
+        width: 90px;
+        font-size: 17px;
+        text-align: center;
+        line-height: 40px;
+        background-color: #e00304;
+      }
+      .ss a{
+        color: #fff;
+      }
+      .gou{
+        position: absolute;
+        top: 40px;
+        left:1040px;
+        width: 150px;
+        height: 38px;
+        font-size: 15px;
+        background-color: #f5f5f5;
+        border:1px solid #e3e3e3;
+      }
+      .gou img{
+        float: left;
+        margin-left: 25px;
+        margin-right: 5px;
+        margin-top: 9px;
+      }
+      .ggg{
+        color: red; 
+      }
+      .gg{
+        color: #5a5a5a;
+        line-height: 38px;
+      }
+      .dao{
+        width: 1200px;
+        height: 40px;
+        margin: 0 auto;
+      }
+      .dao a{
+        width: 90px;
+        height: 27px;
+        margin-right: 42px;
+        font-size: 18px;
+        line-height: 27px;
+        color: #333;
+        display: inline-block;
+        text-align: center;
+      }
+      .dao a:hover{
+        background-color: #fd0304;
+        border-radius: 5px;
+        color: white;
+      }
+      .boddy{
+        background-color: #fbfbfb;
+        height: 652px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .lu{
+        width: 1200px;
+        height: 650px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .biao{
+        width: 215px;
+        height: 560px;
+        float: left;
+      }
+      .b1{
+        width: 215px;
+        height: 43px;
+        background-color: #fff;
+        margin-bottom: 10px;
+      }
+      .b1 p{
+        float: right;
+        padding-right: 60px;
+        font-size: 18px;
+        line-height: 43px;
+      }
+      .b1 img{
+        margin-top: 12px;
+      }
+      .b1 img{
+        margin-left: 32px;
+      }
+      .b2{
+        background-color: #fff;
+        width: 215px;
+        height: 507px;
+        position:absolute;
+        top:130px;
+        left: 5px;
+      }
+      .b2 ul{
+        padding-top: 20px;
+        padding-left: 76px;
+      }
+      .b2 li{
+        padding-bottom: 32px;
+      }
+      .shi{
+        color:#ff2c18;
+      }
+      .ll{
+        font-size: 16px;
+        line-height: 68px;
+        margin-top: 3px;
+      }
+      .biaoge{
+        width:973px;
+        height:563px;
+        background-color:white;
+        position: absolute;
+        top:225px;
+        left: 380px;
+        margin-right:0px;
+        margin-top:52px;
+      }
+      .pi{
+      	text-align: center;
+        width:220px;
+        height:250px;
+        border:1px solid #dbdbdb;
+        float:left;
+        margin-left:20px;
+        margin-top:20px;
+      }
+      .pi1{
+        margin-top:23px;  
+      }
+      .pi2{
+        margin-top:33px;
+      }
+      .pi3{
+        margin-top:6px;
+      }
+      .pi4{
+        margin-top:29px;
+      }
+      .p1{
+        color:#aaaaaa;
+        float:left;
+        margin-left:65px;
+        margin-top:30px;
+      }
+      .p2{
+        color:#aaaaaa;
+        float:left;
+        margin-left:65px;
+        margin-top:18px;
+      }
+      .p3{
+        color:#aaaaaa;
+        float:left;
+        margin-left:65px;
+        margin-top:15px;
+      }
+      .p4{
+        color:#aaaaaa;
+        float:left;
+        margin-left:65px;
+        margin-top:38px;
+      }
+      .p11{
+        float:left;
+        margin-left:90px;
+        margin-top:1px;
+      }
+
+      .al5{
+        height:248px;
+        background-color:#2e2e2e;
+      }
+      .bottom{
+        height:248px;
+        width:1200px;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+      }
+      .bottom1{
+        height:150px;
+        width:1200px;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        border-bottom:1px solid #454545; 
+      }
+      .bottom2{
+        height:150px;
+        width:90px;
+        float:left;
+        margin-left:-140px;
+      }
+      .bottom21{
+        height:150px;
+        width:90px;
+        float:left;
+        margin-left:165px;
+      }
+      .bottom22{
+        height:150px;
+        width:90px;
+        float:left;
+        margin-left:185px;
+      }
+      .bottom2 li{
+        display:block;
+        text-align:center;
+      }
+      .ge4{
+        width:243px;
+        height:40px;
+        text-align:center;
+        font-size:1em;
+        float:left;
+        margin-left:5px;
+      }
+      .ge41{
+        width:243px;
+        height:40px;
+        text-align:center;
+        font-size:1em;
+        float:left;
+        margin-left:-7px;
+      }
+      .ge5{
+        width:243px;
+        height:30px;
+        text-align:center;
+        font-size:0.9em;
+        float:left;
+        margin-left:5px;
+      }
+      .ge51{
+        width:243px;
+        height:30px;
+        text-align:center;
+        font-size:0.9em;
+        float:left;
+        margin-left:10px;
+      }
+      .ge52{
+        width:243px;
+        height:30px;
+        text-align:center;
+        font-size:0.9em;
+        float:left;
+        margin-left:18px;
+      }
+      .ge53{
+        width:243px;
+        height:30px;
+        text-align:center;
+        font-size:0.9em;
+        float:left;
+        margin-left:3px;
+      }
+      .aaa{
+        color:white;
+        text-decoration:none;
+      }
+      .aaa:hover{
+        color:#fd0304;
+        text-decoration:none;
+      }
+      .fi1{
+        float:left;
+        margin-left:10px;
+        margin-top:5px;
+      }
+      .wo1{
+        color:#a4a4a4;
+        font-size:0.9em;
+        float:left;
+        margin-left:327px;
+        margin-top:22px;
+      }
+      .wo2{
+        color:#a4a4a4;
+        font-size:0.9em;
+        float:left;
+        margin-left:327px;
+        margin-top:16px;
+      }
+    </style>
+  </head>
+  <body>
+     <div class="header">
+  <div class="top">
+    <div class="to1"><a class="a1" href="#">注册</a></div>
+    <div class="to1">&nbsp;|&nbsp;</div>
+    <div class="to1"><a class="a1" href="#">请登录</a></div>
+    <div class="to1">欢迎来到E族之家，</div>
+    <div class="to1">扫码加入&nbsp;&nbsp;</div>
+    <div class="to2">我的收藏</div>
+    <div class="to2">&nbsp;&nbsp;E族之家手机版</div>
+    <div class="to3">&nbsp;<img src="images/qq.gif"></div>
+    <div class="to2">&nbsp;328203328</div>
+  </div>
+ </div>
+      <div class="topp">
+        <div class="toppp">
+          <img src="images/标题.gif" alt="logo">
+        <form>
+            <input type="text" name="inp1" value="请输入关键词！"  class="inp1" />
+        </form>
+        <div class="ss">
+          <a href="#">搜索</a>
+        </div>
+        <div class="gou">
+          <a href="#">
+            <img src="images/购物车.gif" alt="gouwuche"><span class="gg">购物车(<span class="ggg">0</span>)件</span>
+            </a>
+        </div>
+      </div>
+      <div class="dao">
+        <a href="#">首页</a>
+            <a href="#">E族生活</a>
+            <a href="#">E族服务</a>
+            <a href="#">E族爱心</a>
+      </div>
+    <div class="boddy">
+      <div class="lu">
+        <p class="ll">当前位置：E族爱心&gt;食品</p>
+        <div class="biao">
+          <div class="b1"><img src="images/目录.gif"><p>全部分类</p>
+          </div>
+        </div>
+        <div class="b2">
+          <ul>
+            <li class="shi">&gt;&nbsp;食品</li>
+            <li>&gt;&nbsp;生活用品</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="biaoge">
+      <div class="pi">
+        <img class="pi1" src="images/辣椒.gif">
+        <p class="p1">精品辣椒100g</p>
+        <p class="p11">¥&nbsp;90.00</p>
+      </div>
+      <div class="pi">
+        <img class="pi2" src="images/百香果.gif">
+        <p class="p2">特级百香果3斤</p>
+        <p class="p11">¥&nbsp;90.00</p>
+      </div>
+      <div class="pi">
+        <img class="pi3" src="images/啤酒.gif">
+        <p class="p3">万威啤酒500ml</p>
+        <p class="p11">¥&nbsp;90.00</p>
+      </div>
+      <div class="pi">
+        <img class="pi4" src="images/坚果.gif">
+        <p class="p4">万威啤酒500ml</p>
+        <p class="p11">¥&nbsp;90.00</p>
+      </div>
+      <div class="pi">
+        <img class="pi1" src="images/辣椒.gif">
+        <p class="p1">精品辣椒100g</p>
+        <p class="p11">¥&nbsp;90.00</p>
+      </div>
+      <div class="pi">
+        <img class="pi2" src="images/百香果.gif">
+        <p class="p2">特级百香果3斤</p>
+        <p class="p11">¥&nbsp;90.00</p>
+      </div>
+      <div class="pi">
+        <img class="pi3" src="images/啤酒.gif">
+        <p class="p3">万威啤酒500ml</p>
+        <p class="p11">¥&nbsp;90.00</p>
+      </div>
+      <div class="pi">
+        <img class="pi4" src="images/坚果.gif">
+        <p class="p4">万威啤酒500ml</p>
+        <p class="p11">¥&nbsp;90.00</p>
+      </div>
+    </div>
+  <div class="al5">
+   <div class="bottom">
+    <div class="fi1">
+     <div class="bottom1">
+      <div class="bottom2">
+      <ul>
+      <li ><div class="ge4"><a class="aaa" href="#">新手上路</a></div></li>
+      <li ><div class="ge5"><a class="aaa" href="#">售后流程</a></div></li>
+      <li ><div class="ge5"><a class="aaa" href="#">购物流程</a></div></li>
+      <li ><div class="ge5"><a class="aaa" href="#">订购方式</a></div></li>
+      </ul>
+     </div>
+     <div class="bottom21">
+      <ul>
+      <li ><div class="ge41"><a class="aaa" href="#">配送方式</a></div></li>
+      <li ><div class="ge5"><a class="aaa" href="#">货到付款区域</a></div></li>
+      <li ><div class="ge5"><a class="aaa" href="#">配送支付查询</a></div></li>
+      <li ><div class="ge5"><a class="aaa" href="#">支付方式说明</a></div></li>
+      </ul>
+     </div>
+     <div class="bottom21">
+      <ul>
+      <li ><div class="ge4"><a class="aaa" href="#">购物指南</a></div></li>
+      <li ><div class="ge53"><a class="aaa" href="#">常见问题</a></div></li>
+      <li ><div class="ge53"><a class="aaa" href="#">订购流程</a></div></li>
+      <li ><div class="ge51"><a class="aaa" href="#">注册新会员</a></div></li>
+      </ul>
+     </div>
+     <div class="bottom22">
+      <ul>
+      <li ><div class="ge4"><a class="aaa" href="#">售后服务</a></div></li>
+      <li ><div class="ge51"><a class="aaa" href="#">退换货原则</a></div></li>
+      <li ><div class="ge52"><a class="aaa" href="#">售后服务保障</a></div></li>
+      <li ><div class="ge53"><a class="aaa" href="#">换货流程</a></div></li>
+      </ul>
+     </div>
+     <div class="bottom22">
+      <ul>
+      <li ><div class="ge4"><a class="aaa" href="#">关于我们</a></div></li>
+      <li ><div class="ge52"><a class="aaa" href="#">网站故障报告</a></div></li>
+      <li ><div class="ge53"><a class="aaa" href="#">联系我们</a></div></li>
+      <li ><div class="ge51"><a class="aaa" href="#">权限与建议</a></div></li>
+      </ul>
+     </div>
+    </div>
+    <div class="wo1">
+     <a class="a4" href="#">E族生活</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="a4" href="#">居家维修保养</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="a4" href="#">住宿优惠信息</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="a4" href="#">出行接送</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="a4" href="#">E族活动</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="a4" href="#">E组爱心</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="a4" href="#">积分商城</a>
+    </div>
+    <div class="wo2">
+      © 2017-2019 E族之家 版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号
+    </div>
+    </div>
+   </div>
+  </div>
+  </body>
+</html>
